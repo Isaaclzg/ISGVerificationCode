@@ -1,29 +1,51 @@
-# ISGVerificationCode
+# ISGVerificationCode 本地生成验证码
 
-[![CI Status](https://img.shields.io/travis/isaaclzg/ISGVerificationCode.svg?style=flat)](https://travis-ci.org/isaaclzg/ISGVerificationCode)
 [![Version](https://img.shields.io/cocoapods/v/ISGVerificationCode.svg?style=flat)](https://cocoapods.org/pods/ISGVerificationCode)
 [![License](https://img.shields.io/cocoapods/l/ISGVerificationCode.svg?style=flat)](https://cocoapods.org/pods/ISGVerificationCode)
 [![Platform](https://img.shields.io/cocoapods/p/ISGVerificationCode.svg?style=flat)](https://cocoapods.org/pods/ISGVerificationCode)
 
-## Example
+## 使用说明
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+```
+/*! @brief  是否限制点击更换验证码 */
+@property (nonatomic, assign) BOOL isBanTouch;
 
-## Requirements
+/*! @brief  验证码 */
+@property (nonatomic, strong, readonly) NSString *verificationCode;
 
-## Installation
+/*! @brief 配置 */
+@property (nonatomic, strong) ISGVerificationConfig *config;
 
-ISGVerificationCode is available through [CocoaPods](https://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+/*! @brief 是否随机颜色，默认NO 设置为yes的时候，config中的颜色设置将无效 */
+@property (nonatomic, assign) BOOL isRandomColor;
+
+/**
+ *  更换验证码
+ */
+- (void)changeVerificationCode;
+
+/**
+ *  不区分大小写对比验证码
+ *
+ *  @param string 输入的验证码
+ *
+ *  @return 是否相同
+ */
+- (BOOL)compareResult:(NSString *)string;
+```
+
+
+## 安装（CocoaPods）
 
 ```ruby
 pod 'ISGVerificationCode'
 ```
 
-## Author
+## 作者
 
-isaaclzg, isaac_gang@163.com
+[Mr.Liu](https://www.jianshu.com/u/7e1b920cdac1), isaac_gang@163.com
 
-## License
 
-ISGVerificationCode is available under the MIT license. See the LICENSE file for more info.
+## 许可证
+
+ISGVerificationCode在MIT许可下可用。有关更多信息，请参见许可证文件.
