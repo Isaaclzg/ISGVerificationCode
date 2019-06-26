@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'ISGVerificationCode_Example' do
+  pod 'ISGVerificationCode', :path => '../'
+
+  target 'ISGVerificationCode_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

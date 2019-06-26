@@ -1,0 +1,6 @@
+framework module Pods_ISGVerificationCode_Tests {
+  umbrella header "Pods-ISGVerificationCode_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

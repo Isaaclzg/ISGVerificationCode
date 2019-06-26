@@ -1,0 +1,16 @@
+PODS:
+  - ISGVerificationCode (1.0)
+
+DEPENDENCIES:
+  - ISGVerificationCode (from `../`)
+
+EXTERNAL SOURCES:
+  ISGVerificationCode:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ISGVerificationCode: 212028b014580f18fd54193b417ec8dfbc23bb65
+
+PODFILE CHECKSUM: 2c0329816e11757c84a1188b41c50446ac37e5bc
+
+COCOAPODS: 1.6.1

@@ -1,0 +1,6 @@
+framework module ISGVerificationCode {
+  umbrella header "ISGVerificationCode-umbrella.h"
+
+  export *
+  module * { export * }
+}
